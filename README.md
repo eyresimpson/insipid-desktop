@@ -1,24 +1,37 @@
 # insipid
 
-## Project setup
+## 描述
+
+Insipid是一种`精简的`，`高度自动化的`，`自由的`软件分发与管理系统，允许用户快速的部署/管理/更新/删除软件
+
+insipid项目包括用户端程序 Insipid (Insipid Store/Insipid 商店) 和 服务端源程序 Insipid Origin/Insipid 起源)
+
+其中本项目是Insipid客户端程序，Insipid 服务端项目另请参照 [起源](http://doc.tineaine.com)
+
+## 项目部署
+
+### 安装依赖
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行测试
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 编译Exe
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 编译Windows安装程序
+
 ```
-npm run lint
+npm run install
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
