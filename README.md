@@ -8,6 +8,8 @@ insipid项目包括用户端程序 Insipid (Insipid Store/Insipid 商店) 和 �
 
 其中本项目是Insipid客户端程序，Insipid 服务端项目另请参照 [起源](http://doc.tineaine.com)
 
+
+
 ## 项目部署
 
 ### 安装依赖
@@ -33,5 +35,15 @@ npm run build
 ```
 npm run install
 ```
+
+## 技术选型
+
+#### 客户端：Electron + Vue3 + Typescript
+
+#### 前端状态存储：Pinia
+
+#### 前端路由：Vue Route
+
+#### 网络请求：Axios
 
 
