@@ -1,5 +1,7 @@
 // 此文件记录所有请求
 
+import { get } from '@/tools/net'
+
 const baseurl = "http://127.0.0.1:8886/insipid/";
 
 // 后缀路径列表
@@ -16,4 +18,16 @@ const RequestSoftware = {
     requestScriptUpdate: "request/script/update",
     // 请求指定软件的卸载脚本
     requestScriptUninstall: "request/script/uninstall",
+}
+
+const requestSoftwareStatus = () => {
+    get(baseurl + RequestSoftware.requestSoftwareStatus,
+        () => {
+            console.log();
+
+        })
+}
+
+export {
+    requestSoftwareStatus
 }
