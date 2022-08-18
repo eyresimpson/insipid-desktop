@@ -8,7 +8,7 @@
                     <el-button class="button" text>Operation button</el-button>
                 </div>
             </template>
-            <div v-for="o in 4" :key="o" class="text item">{{ 'List item ' + o }}</div>
+            <div class="text item">默认</div>
         </el-card>
     </div>
 </template>
