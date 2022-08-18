@@ -1,7 +1,9 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">开始</router-link> |
+    <router-link to="/app">应用</router-link> |
+    <router-link to="/manage">管理</router-link> |
+    <router-link to="/about">关于</router-link>
   </nav>
   <router-view/>
 </template>

@@ -1,4 +1,7 @@
 // 软件生命周期，后续会拆分
+
+import { requestSoftwareStatus } from "@/request";
+
 // 安装软件
 const install = (name: string) => {
     // 检查本地缓存是否有安装包
@@ -24,7 +27,8 @@ const runtime = (name: string) => {
 }
 // 检查软件状态（本地状态）
 const status = (name: string) => {
-    console.log(name);
+    const status = requestSoftwareStatus(name);
+    console.log(status);
 }
 // 更新软件
 const update = (name: string) => {
