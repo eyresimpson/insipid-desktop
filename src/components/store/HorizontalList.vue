@@ -1,12 +1,12 @@
 <template>
     <div>
         <!-- 单一窗格 -->
-        asdasdasd
+        <HorizontalCard></HorizontalCard>
     </div>
 </template>
 
-<script lang="ts">
-
+<script lang="ts" setup>
+    import HorizontalCard from '@/components/store/HorizontalCard.vue'
 </script>
 <style>
 .card {
