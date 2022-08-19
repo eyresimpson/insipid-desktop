@@ -4,8 +4,9 @@
         <el-card class="box-card">
             <template #header>
                 <div class="card-header">
-                    <span>{{name}}</span>
-                    <el-button class="button" text>Operation button</el-button>
+                    <span>{{ (app as Application).name }}</span>
+                    <el-button class="button" text>安装</el-button>
+                    <el-button class="button" text>卸载</el-button>
                 </div>
             </template>
             <div class="text item">默认</div>
@@ -14,33 +15,11 @@
 </template>
 
 <script lang="ts" setup>
+import Application from "@/type/Application";
 import { defineProps } from "vue";
 
 defineProps({
-    // 名称
-    name: String,
-    // 类型(程序/脚本/主题/插件)
-    type: String,
-    // 描述
-    description: String,
-    // 作者
-    author: String,
-    // 更新时间（最后上传时间）
-    updateTime: Date,
-    // 下载计数
-    downloadCount: Number,
-    // 评分
-    grade: Number,
-    // 截图
-    picture: Array,
-    // 大小(下载大小)
-    size: String,
-    // 语言（中文/英文/德文/韩文/日文...）
-    language: String,
-    // 评论(最高/最低/最新各3条，共计9条评论)
-    comment: Object,
-    // 费用
-    cost: String
+    app: Application
 });
 </script>
 <style>
