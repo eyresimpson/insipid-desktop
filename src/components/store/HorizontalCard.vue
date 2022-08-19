@@ -4,7 +4,7 @@
         <el-card class="box-card">
             <template #header>
                 <div class="card-header">
-                    <span>Card name</span>
+                    <span>{{name}}</span>
                     <el-button class="button" text>Operation button</el-button>
                 </div>
             </template>
@@ -64,6 +64,6 @@ defineProps({
 
 .box-card {
     width: 480px;
-    background-color: rgb(41, 41, 41);
+    /* background-color: rgb(41, 41, 41); */
 }
 </style>
