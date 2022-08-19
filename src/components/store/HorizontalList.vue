@@ -24,6 +24,6 @@ defineProps<{
 }
 
 .list-group {
-    background: rgb(197, 245, 247);
+    /* background: rgb(197, 245, 247); */
 }
 </style>

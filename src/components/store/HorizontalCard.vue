@@ -5,8 +5,7 @@
             <template #header>
                 <div class="card-header">
                     <span>{{ (app as Application).name }}</span>
-                    <el-button class="button" text>安装</el-button>
-                    <el-button class="button" text>卸载</el-button>
+                    <el-button type="success" class="button" text>安装</el-button>
                 </div>
             </template>
             <div class="text item">默认</div>
