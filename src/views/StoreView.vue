@@ -8,10 +8,15 @@
 import HorizontalList from '@/components/store/HorizontalList.vue';
 import Application from '@/type/Application';
 import { onMounted } from 'vue';
-const appList:Array<Application> = [];
+let appList: Array<Application> = [];
 onMounted(() => {
-  console.log("---");
-  // 请求所有程序的数据
+    console.log("---");
+    // 请求所有程序的数据
+    appList.push({
+        name: "数据清理",
+        size: "100"
+    })
+    console.log("---", appList);
 
 })
 </script>
