@@ -8,7 +8,6 @@
           :collapse="true"
           @open="handleOpen"
           @close="handleClose"
-          :router="true"
         >
           <el-menu-item index="1">
             <el-icon>
