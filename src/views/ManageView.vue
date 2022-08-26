@@ -75,7 +75,8 @@ const handleSelect = (key: string) => {
 </script>
 <style>
 .content {
-  background-color: azure;
+  /* background-color: azure; */
   height: 100%;
+  margin-left: 30px;
 }
 </style>
