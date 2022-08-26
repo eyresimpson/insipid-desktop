@@ -1,7 +1,5 @@
 <template>
   <div>
-    <h1>Insipid</h1>
-    <h5>精简/开源/自由的软件/脚本控制器</h5>
 
   </div>
 </template>
