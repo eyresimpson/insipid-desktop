@@ -37,10 +37,10 @@
       <el-col :span="22">
         <div class="content">
           <!-- <router-view /> -->
-          <systemConfigComponent :v-if="selected=='system'"></systemConfigComponent>
-          <networkConfigComponent :v-if="selected=='network'"></networkConfigComponent>
-          <securityConfigComponent :v-if="selected=='security'"></securityConfigComponent>
-          <otherConfigComponent :v-if="selected=='other'"></otherConfigComponent>
+          <systemConfigComponent v-if="selected=='system'"></systemConfigComponent>
+          <networkConfigComponent v-if="selected=='network'"></networkConfigComponent>
+          <securityConfigComponent v-if="selected=='security'"></securityConfigComponent>
+          <otherConfigComponent v-if="selected=='other'"></otherConfigComponent>
         </div>
       </el-col>
     </el-row>
