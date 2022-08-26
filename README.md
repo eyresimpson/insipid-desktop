@@ -1,4 +1,4 @@
-# insipid
+# Insipid Desktop
 
 ## 描述
 
@@ -46,6 +46,6 @@ npm run install
 
 #### 网络请求：Axios
 
-#### 后端服务：Go
+#### 后端服务：Java (Spring Boot + Mybatis Plus + Mariadb)
 
 
