@@ -3,7 +3,7 @@
     <el-row>
       <el-col :span="2">
         <el-menu
-          default-active="2"
+          default-active="system"
           class="el-menu-vertical-demo"
           :collapse="true"
           @select="handleSelect"

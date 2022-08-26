@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <h1>Insipid Desktop</h1>
   </div>
 </template>
 
