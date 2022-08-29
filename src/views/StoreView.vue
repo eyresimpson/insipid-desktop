@@ -50,6 +50,7 @@
 
 <script lang="ts" setup>
 import HorizontalList from "@/components/store/HorizontalList.vue";
+import { requestSoftwareList } from "@/request";
 import Application from "@/type/Application";
 import {
   Check,
@@ -65,24 +66,18 @@ import { reactive } from "vue";
 let appList = reactive(Array<Application>());
 // const filter = ref("none");
 
-const changeFilter = (filter: string) => {
+const changeFilter = async (filter: string) => {
+  // 清空旧数组
   appList.length = 0;
-  const app:Application ={
-    name: "打开行",
-    type: "script",
-    description: "一个简单的脚本",
-    author: "aine",
-    updateTime: new Date(),
-    downloadCount: 0,
-    grade: 0,
-    picture: [],
-    size: "1220kb",
-    language: "zh-CN",
-    cost: "0￥",
-    state:"uninstalled"
-  }
-  appList.push(app);
-  // console.log(filter);
+  console.log(filter);
+  
+  // 查询数据
+  const res:Array<Application> = await requestSoftwareList(filter);
+
+    res.forEach((app:Application)=>{
+      // console.log(app);
+      appList.push(app);
+    });
 };
 </script>
 <style>
