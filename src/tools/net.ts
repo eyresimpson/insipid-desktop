@@ -1,33 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import axios, { AxiosResponse } from 'axios';
+import axios from "axios";
 
-const get = (
-    address: string,
-    Success?: (response: AxiosResponse<any, any>) => void,
-    Fail?: (error: AxiosResponse<any, any>) => void,
-    Finally?: () => void
-): any => {
-    axios.get(address)
-        .then(function (response) {
-            if (Success)
-                Success(response)
-            else return response
-        })
-        .catch(function (error) {
-            if (Fail)
-                Fail(error)
-            else return error
-        })
-        .then(function () {
-            if (Finally)
-                Finally()
-        });
-}
+const get = (address: string): any => {
+  return axios.get(address);
+};
 const post = () => {
-    console.log();
+  console.log();
+};
 
-}
-
-export {
-    get, post
-}
+export { get, post };

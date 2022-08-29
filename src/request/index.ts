@@ -2,14 +2,13 @@
 
 import { get } from "@/tools/net";
 import Application from "@/type/Application";
-import { log } from "console";
 
-const baseurl = "http://127.0.0.1:8886/insipid/";
+const baseurl = "http://localhost:2998/insipid/";
 
 // 后缀路径列表
 const RequestSoftware = {
   // 请求软件列表
-  requestSoftwareList: baseurl + "request/software/list",
+  requestSoftwareList: baseurl + "app/list",
   // 请求指定软件的状态
   requestSoftwareStatus: baseurl + "request/software/status",
   // 请求指定软件的下载地址
@@ -22,23 +21,12 @@ const RequestSoftware = {
   requestScriptUninstall: baseurl + "request/script/uninstall",
 };
 const requestSoftwareList = async (filter: string): Promise<Application[]> => {
-  console.log("-----------> ",filter);
-  return [
-    {
-      name: "打开1行",
-      type: "script",
-      description: "一个简单的脚本",
-      author: "aine",
-      updateTime: new Date(),
-      downloadCount: 0,
-      grade: 0,
-      picture: [],
-      size: "1220kb",
-      language: "zh-CN",
-      cost: "0￥",
-      state: "uninstalled",
-    },
-  ];
+  console.log(
+    "Request Path--->",
+    RequestSoftware.requestSoftwareList + "?type=" + filter
+  );
+  return (await get(RequestSoftware.requestSoftwareList + "?type=" + filter))
+    .data;
 };
 
 // 请求软件的状态

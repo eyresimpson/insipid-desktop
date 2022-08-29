@@ -61,10 +61,7 @@ import {
   Star,
 } from "@element-plus/icons-vue";
 import { reactive } from "vue";
-// import { ref } from "vue";
-// let appList: Array<Application> = [];
 let appList = reactive(Array<Application>());
-// const filter = ref("none");
 
 const changeFilter = async (filter: string) => {
   // 清空旧数组
@@ -73,9 +70,9 @@ const changeFilter = async (filter: string) => {
   
   // 查询数据
   const res:Array<Application> = await requestSoftwareList(filter);
-
+    console.log("-----==>",res);
+    
     res.forEach((app:Application)=>{
-      // console.log(app);
       appList.push(app);
     });
 };
