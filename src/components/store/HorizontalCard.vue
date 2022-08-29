@@ -23,7 +23,7 @@ defineProps({
 </script>
 <style>
 .card {
-    background: #000;
+    /* background: #000; */
 }
 
 .card-header {
@@ -41,7 +41,7 @@ defineProps({
 }
 
 .box-card {
-    width: 480px;
+    width: 200px;
     /* background-color: rgb(41, 41, 41); */
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="list-group">
         <!-- 单一窗格 -->
-        <HorizontalCard v-for="(item, index) in list" :key="index" :app="item"></HorizontalCard>
+        <HorizontalCard class="card" v-for="(item, index) in list" :key="index" :app="item"></HorizontalCard>
     </div>
 </template>
 
@@ -20,7 +20,8 @@ defineProps<{
 </script>
 <style>
 .card {
-    background: #000;
+    /* background: #000; */
+    /* width: 30%; */
 }
 
 .list-group {
