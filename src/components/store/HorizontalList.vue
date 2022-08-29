@@ -1,12 +1,13 @@
 <template>
     <div class="list-group">
         <!-- 单一窗格 -->
-        <HorizontalCard class="card" v-for="(item, index) in list" :key="index" :app="item"></HorizontalCard>
+        <StandardItemFlow class="card" v-for="(item, index) in list" :key="index" :app="item"></StandardItemFlow>
     </div>
 </template>
 
 <script lang="ts" setup>
-import HorizontalCard from '@/components/store/HorizontalCard.vue'
+// import HorizontalCard from '@/components/store/HorizontalCard.vue'
+import StandardItemFlow from '@/components/store/StandardItemFlow.vue'
 import Application from '@/type/Application';
 import { defineProps } from "vue";
 
