@@ -25,14 +25,14 @@ defineProps({
 </script>
 <style>
 .item {
-  background: rgb(177, 213, 255);
-  border: 1px solid rgb(78, 110, 255);
+  background: rgb(247, 247, 247);
+  border: 1px solid rgb(214, 214, 214);
   padding-top: 25px;
   padding-bottom: 25px;
   margin: 5px;
 }
 .title {
-  color: rgb(121, 121, 121);
+  color: rgb(77, 77, 77);
 }
 .description {
   text-align: left;

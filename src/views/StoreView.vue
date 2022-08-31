@@ -40,10 +40,6 @@
         >
       </el-col>
     </el-row>
-    <!-- <el-radio-group v-model="isScript" style="margin-bottom: 20px">
-      <el-radio-button label="app">应用程序</el-radio-button>
-      <el-radio-button label="script">脚本文件</el-radio-button>
-    </el-radio-group> -->
     <HorizontalList :list="appList"></HorizontalList>
   </div>
 </template>
@@ -67,14 +63,14 @@ const changeFilter = async (filter: string) => {
   // 清空旧数组
   appList.length = 0;
   console.log(filter);
-  
+
   // 查询数据
-  const res:Array<Application> = await requestSoftwareList(filter);
-    console.log("-----==>",res);
-    
-    res.forEach((app:Application)=>{
-      appList.push(app);
-    });
+  const res: Array<Application> = await requestSoftwareList(filter);
+  console.log("-----==>", res);
+
+  res.forEach((app: Application) => {
+    appList.push(app);
+  });
 };
 changeFilter("defalut");
 </script>
