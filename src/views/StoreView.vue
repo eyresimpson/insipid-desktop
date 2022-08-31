@@ -76,6 +76,7 @@ const changeFilter = async (filter: string) => {
       appList.push(app);
     });
 };
+changeFilter("defalut");
 </script>
 <style>
 .ctrl-button {
