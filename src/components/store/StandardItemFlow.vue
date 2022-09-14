@@ -8,6 +8,7 @@
       <el-col class="description" :span="12">{{
         (app as Application).description
       }}</el-col>
+      
       <el-col :span="4">
         <el-button type="default">{{(app as Application).state == "uninstalled" ? "安装" : "管理"}}</el-button>
       </el-col>
