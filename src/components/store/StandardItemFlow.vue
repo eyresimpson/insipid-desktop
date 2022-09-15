@@ -3,7 +3,7 @@
     <!-- 软件卡片 -->
     <el-row>
       <el-col>
-        <el-image src="favicon.ico" fit="fill"></el-image>
+        <el-image :src="(app as Application).icon" fit="fill"></el-image>
       </el-col>
     </el-row>
     <el-row>
