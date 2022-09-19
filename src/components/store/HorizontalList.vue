@@ -23,9 +23,11 @@ defineProps<{
 .card {
     /* background: #000; */
     /* width: 30%; */
+    float:right;
 }
 
 .list-group {
+    width: 90%;
     /* background: rgb(197, 245, 247); */
 }
 </style>

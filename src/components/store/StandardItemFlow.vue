@@ -11,17 +11,6 @@
         <div class="title">{{ (app as Application).name }}</div>
       </el-col>
     </el-row>
-    <!-- <el-row>
-      <el-col :span="6">
-        <div class="title">{{ (app as Application).name }}</div>
-      </el-col>
-      <el-col class="description" :span="12">{{
-        (app as Application).description
-      }}</el-col>
-      <el-col :span="4">
-        <el-button type="default">{{(app as Application).state == "uninstalled" ? "安装" : "管理"}}</el-button>
-      </el-col>
-    </el-row> -->
   </div>
 </template>
 
