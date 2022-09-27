@@ -2,7 +2,7 @@
   <div>
     <el-row class="ctrl-container">
       <el-col :span="24">
-        <el-button :icon="Search" circle class="ctrl-button"></el-button>
+        
         <el-button
           type="primary"
           :icon="Edit"
@@ -10,34 +10,7 @@
           class="ctrl-button"
           >已安装优先</el-button
         >
-        <el-button
-          type="success"
-          :icon="Check"
-          @click="changeFilter('uninstalled')"
-          class="ctrl-button"
-          >未安装优先</el-button
-        >
-        <el-button
-          type="info"
-          :icon="Message"
-          @click="changeFilter('script')"
-          class="ctrl-button"
-          >仅脚本</el-button
-        >
-        <el-button
-          type="warning"
-          :icon="Star"
-          @click="changeFilter('app')"
-          class="ctrl-button"
-          >仅应用</el-button
-        >
-        <el-button
-          type="danger"
-          :icon="Delete"
-          @click="changeFilter('opensource')"
-          class="ctrl-button"
-          >仅开源</el-button
-        >
+        <el-button :icon="Search" circle class="ctrl-button"></el-button>
       </el-col>
     </el-row>
     <HorizontalList :list="appList"></HorizontalList>

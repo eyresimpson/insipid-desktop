@@ -27,7 +27,7 @@ defineProps<{
 }
 
 .list-group {
-    width: 90%;
+    /* width: 90%; */
     /* background: rgb(197, 245, 247); */
 }
 </style>
